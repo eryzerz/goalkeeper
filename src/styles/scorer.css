@@ -1,0 +1,12 @@
+.scorer {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    font-family: var(--font-tertiary);
+}
+
+.scorer-header {
+    background-color: var(--text-primary);
+    color: var(--bg-secondary);
+    font-family: var(--font-secondary);
+    border-bottom: 1px solid var(--bg);
+}

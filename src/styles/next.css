@@ -1,0 +1,82 @@
+.centering {
+    text-align: center;
+}
+
+.today-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40rem;
+    margin: 1rem auto;
+}
+
+h5 {
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+}
+
+.today-card {
+    background-color: var(--bg-secondary);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 25rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.today-card div {
+    background-color: var(--bg);
+    border-radius: 0.5rem;
+    font-family: var(--font-secondary);
+    color: var(--text-secondary);
+    width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 1rem;
+}
+
+.today-card > div p {
+    margin: 0 auto;
+    font-family: var(--font-tertiary);
+}
+
+.score {
+    width: 8rem !important;
+    color: var(--text-primary) !important;
+}
+
+.progress {
+    background-color: var(--bg-secondary);
+}
+
+.indeterminate {
+    background-color: var(--text-primary) !important;
+}
+
+.save-match-btn {
+    position: absolute;
+    left: -35px;
+    bottom: 29px;
+    width: 3rem !important;
+    height: 3rem !important;
+    padding: 1rem;
+    border-radius: 50% !important;
+    box-shadow: 0 1px 2px var(--text-secondary);
+}
+
+.update-match-btn {
+    position: absolute;
+    right: -35px;
+    bottom: 29px;
+    width: 3rem !important;
+    height: 3rem !important;
+    padding: 1rem;
+    border-radius: 50% !important;
+    box-shadow: 0 1px 2px var(--text-secondary);
+}

@@ -1,0 +1,96 @@
+.wrapper {
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.team-container {
+    position: relative;
+    background-color: var(--bg-secondary);
+    border: solid 0.1rem var(--text-primary);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    padding: 10rem 1rem 1rem 1rem;
+}
+
+.desc-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    word-break: break-word;
+}
+
+.desc > h6 {
+    font-family: var(--font-secondary);
+    color: var(--text-primary);
+    text-shadow: 0px 1px 4px var(--text-secondary);
+}
+
+.desc > p {
+    font-family: var(--font-tertiary);
+    color: var(--text-primary);
+}
+
+.team-crest {
+    position: absolute;
+    top: -4rem;
+    margin: 0 auto;
+    background-color: var(--text-primary);
+    width: 13rem;
+    height: 13rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+
+.player {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    font-family: var(--font-tertiary);
+}
+
+.player-header {
+    background-color: var(--text-primary);
+    color: var(--bg-secondary);
+    font-family: var(--font-secondary);
+    border-bottom: 1px solid var(--bg);
+}
+
+.coach-container {
+    margin: 4rem auto;
+}
+
+.coach {
+    position: relative;
+    background-color: var(--bg-secondary);
+    color: var(--bg);
+    font-family: var(--font-tertiary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    border: solid 0.1rem var(--text-primary);
+    padding-top: 3rem;
+}
+
+.coach-name {
+    position: absolute;
+    top: -2rem;
+    margin: 0 auto;
+    background-color: var(--text-primary);
+    /* width: 10rem; */
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-family: var(--font-secondary);
+    text-shadow: -2px 1px 7px var(--bg-secondary);
+}

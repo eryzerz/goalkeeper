@@ -1,0 +1,38 @@
+.table-container {
+    max-width: 80%;
+    margin: 2rem auto;
+}
+
+thead > tr {
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    color: var(--text-secondary);
+    font-family: var(--font-primary);
+}
+
+table.striped>tbody>tr:nth-child(odd) {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+table.striped tr {
+    color: var(--text-secondary);
+}
+
+@media screen and (min-width: 994px) {
+    tbody {
+        display: block;
+        max-height: 15rem;
+        overflow: auto;
+        }
+    thead, tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+    thead {
+        width: calc( 100% - 1em )
+    }
+    table {
+        width: 100%;
+    }
+}

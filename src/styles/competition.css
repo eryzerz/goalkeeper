@@ -1,0 +1,19 @@
+.comp-container {
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.comp-container img {
+    background: var(--text-primary);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.carousel {
+    height: 15rem !important;
+}
