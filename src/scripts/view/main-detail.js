@@ -17,7 +17,7 @@ const detail = async () => {
 
         const url = process.env.NODE_ENV === "development" ? `/src/pages/detail.html` : `/dist/src/pages/detail.html`
         try {
-            const res = await axios.get(url);
+            const res = await axios.get(`/src/pages/detail.html`);
 
             if (res.status === 200) {
                 state.content = res.data
