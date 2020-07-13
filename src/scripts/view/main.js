@@ -7,8 +7,9 @@ const main = async () => {
         let state = {
             content: ''
         }
+        const url = process.env.NODE_ENV === "development" ? `/src/pages/${page}.html` : `/dist/src/pages/${page}.html`
         try {
-            const res = await axios.get(`/src/pages/${page}.html`);
+            const res = await axios.get(url);
 
             if (res.status === 200) {
                 state.content = res.data
