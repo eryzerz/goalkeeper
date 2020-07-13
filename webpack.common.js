@@ -64,6 +64,10 @@ module.exports = {
             filename: "team-detail.html"
         }),
         new HtmlWebpackPlugin({
+            template: "./src/pages/home.html",
+            filename: "src/pages/home.html"
+        }),
+        new HtmlWebpackPlugin({
             template: "./src/pages/detail.html",
             filename: "src/pages/detail.html"
         }),
