@@ -66,7 +66,7 @@ const team = async () => {
 
 document.addEventListener('DOMContentLoaded', () => (() => {
     if ("serviceWorker" in navigator) {
-        if (process.env.NODE_ENV === "development") {
+        // if (process.env.NODE_ENV === "development") {
             navigator.serviceWorker
                 .register("/service-worker.js")
                 .then(function () {
@@ -76,18 +76,18 @@ document.addEventListener('DOMContentLoaded', () => (() => {
                 .catch(function () {
                     console.log("Failed to register Service Worker");
                 });
-        }
-        if (process.env.NODE_ENV === "production") {
-            navigator.serviceWorker
-                .register("/dist/service-worker.js")
-                .then(function () {
-                    console.log("DIST Service Worker successfully registered");
-                    team()
-                })
-                .catch(function () {
-                    console.log("Failed to register DIST Service Worker");
-                });
-        }
+        // }
+        // if (process.env.NODE_ENV === "production") {
+        //     navigator.serviceWorker
+        //         .register("/dist/service-worker.js")
+        //         .then(function () {
+        //             console.log("DIST Service Worker successfully registered");
+        //             team()
+        //         })
+        //         .catch(function () {
+        //             console.log("Failed to register DIST Service Worker");
+        //         });
+        // }
     } else {
         console.log("Service Worker isn't supported in this browser.");
     }
