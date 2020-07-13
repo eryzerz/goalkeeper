@@ -68,6 +68,10 @@ module.exports = {
             filename: "src/pages/home.html"
         }),
         new HtmlWebpackPlugin({
+            template: "./src/pages/keeper.html",
+            filename: "src/pages/keeper.html"
+        }),
+        new HtmlWebpackPlugin({
             template: "./src/pages/detail.html",
             filename: "src/pages/detail.html"
         }),
