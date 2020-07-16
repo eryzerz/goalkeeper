@@ -1,6 +1,7 @@
 import '../view/materialize.min.js'
 import { getTeam } from "../services/team"
 import { saveTeam, deleteTeam } from '../services/database.js'
+import crest from '../../assets/images/crest.png'
 
 let state = {
     content: ''
@@ -209,6 +210,12 @@ class TeamDescElem extends HTMLElement {
             </div>
         </div>
         `
+
+        const img = document.querySelector('img.team-crest');
+
+        img.addEventListener('error', () => {
+            img.setAttribute('src', crest)
+        });
 
         const target = document.querySelector('.tap-target')
         M.TapTarget.init(target);
