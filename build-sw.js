@@ -2,8 +2,8 @@ const glob = require('glob');
 const fs = require('fs');
 
 const dest = 'dist/service-worker.js';
-const staticAssetsCacheName = 'GK-assets-v2';
-const dynamicCacheName = 'GK-dynamic-v2';
+const staticAssetsCacheName = 'GK-assets-v3';
+const dynamicCacheName = 'GK-dynamic-v3';
 
 let staticAssetsCacheFiles = glob
   .sync('dist/**/*')
